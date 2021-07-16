@@ -1,39 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('static/normalize.min.css');
 
+/* 111827 */
+/* F9FAFB */
+
+:root {
+	--bg-color: #1f2937;
+	--font-color: #F9FAFB;
+}
+
 body {
 	align-items: center;
-	background-color: #F9FAFB;
-	color: #111827;
+	background-color: var(--bg-color);
+	color: var(--font-color);
 	display: flex;
 	flex-direction: column;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16px;
 	min-height: 100vh;
+	position: relative;
+}
+
+body::after {
+	box-shadow:
+		inset 0 0 0 2px #FF0900,
+		inset 0 0 0 4px #FF7F00,
+		inset 0 0 0 6px #FFEF00,
+		inset 0 0 0 8px #00F11D,
+		inset 0 0 0 10px #0079FF,
+		inset 0 0 0 12px #A800FF;
+	content: '';
+	height: 100%;
+	position: absolute;
+	width: 100%;
 }
 
 header, main, footer {
-	padding: 0 1rem;
+	box-sizing: border-box;
+	padding: 0 2rem;
+	margin-top: 2rem;
 	max-width: 100ch;
 	width: 100%;
 }
 
+header {
+	border-bottom: 1px dotted #4B5563;
+	text-align: center;
+}
+
 h1 {
 	font-size: 3rem;
+	margin: 0;
 }
 
 h2 {
 	font-size: 2rem;
+	margin: 1rem 0 0;
+}
+
+p, ul {
+	font-size: 1.25rem;
+}
+
+p {
+	margin: 1.25rem 0 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
 }
 
 main {
 	flex: 1;
 }
 
+section:not(:first-of-type) {
+	margin: 1.5rem 0 0;
+}
+
 footer {
-	border-top: 1px dotted #D1D5DB;
+	border-top: 1px dotted #4B5563;
 	bottom: 0;
-	padding-bottom: 2rem;
+	padding-bottom: 3rem;
 	padding-top: 2rem;
 	text-align: center;
 }
