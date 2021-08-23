@@ -12,16 +12,6 @@
 body {
 	align-items: center;
 	background-color: var(--bg-color);
-	color: var(--font-color);
-	display: flex;
-	flex-direction: column;
-	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 16px;
-	min-height: 100vh;
-	position: relative;
-}
-
-body::after {
 	box-shadow:
 		inset 0 0 0 2px #FF0900,
 		inset 0 0 0 4px #FF7F00,
@@ -29,10 +19,13 @@ body::after {
 		inset 0 0 0 8px #00F11D,
 		inset 0 0 0 10px #0079FF,
 		inset 0 0 0 12px #A800FF;
-	content: '';
-	height: 100%;
-	position: absolute;
-	width: 100%;
+	color: var(--font-color);
+	display: flex;
+	flex-direction: column;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+	min-height: 100vh;
+	position: relative;
 }
 
 header, main, footer {
