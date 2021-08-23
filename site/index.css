@@ -72,11 +72,24 @@ ul {
 }
 
 main {
+	display: flex;
+	flex: 1;
+}
+
+section {
 	flex: 1;
 }
 
 section:not(:first-of-type) {
 	margin: 1.5rem 0 0;
+}
+
+a {
+	color: #818CF8;
+}
+
+embed {
+	margin-top: 1.25rem;
 }
 
 footer {
