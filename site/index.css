@@ -13,12 +13,12 @@ body {
 	align-items: center;
 	background-color: var(--bg-color);
 	box-shadow:
-		inset 0 0 0 2px #FF0900,
-		inset 0 0 0 4px #FF7F00,
-		inset 0 0 0 6px #FFEF00,
-		inset 0 0 0 8px #00F11D,
-		inset 0 0 0 10px #0079FF,
-		inset 0 0 0 12px #A800FF;
+		inset -3px  -3px 0 3px #FF0900,
+		inset -6px  -6px 0 6px #FF7F00,
+		inset -9px  -9px 0 9px #FFEF00,
+		inset -12px -12px 0 12px #00F11D,
+		inset -15px -15px 0 15px #0079FF,
+		inset -18px -18px 0 18px #A800FF;
 	color: var(--font-color);
 	display: flex;
 	flex-direction: column;
@@ -66,6 +66,7 @@ ul {
 
 main {
 	display: flex;
+	flex-direction: column;
 	flex: 1;
 }
 
@@ -88,7 +89,7 @@ embed {
 footer {
 	border-top: 1px dotted #4B5563;
 	bottom: 0;
-	padding-bottom: 3rem;
+	padding-bottom: 4rem;
 	padding-top: 2rem;
 	text-align: center;
 }
@@ -96,4 +97,16 @@ footer {
 footer small {
 	font-size: 0.75rem;
 	font-style: italic;
+}
+
+@media (max-width: 720px) {
+	body {
+		box-shadow:
+			inset -1px -1px 0 1px #FF0900,
+			inset -2px -2px 0 2px #FF7F00,
+			inset -3px -3px 0 3px #FFEF00,
+			inset -4px -4px 0 4px #00F11D,
+			inset -5px -5px 0 5px #0079FF,
+			inset -6px -6px 0 6px #A800FF;
+	}
 }
